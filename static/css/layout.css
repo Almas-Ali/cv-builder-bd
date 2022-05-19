@@ -1,0 +1,96 @@
+body {
+    background-image: url('../img/theme_bg.jpg');
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0 0 30px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    background-color: #66CDAA;
+    padding: 8px 0;
+    z-index: 999;
+}
+
+.container-fluid {
+    margin-top: 90px;
+}
+
+nav ul li {
+    padding: 8px;
+    margin: 0 12px;
+    font-size: 18px;
+}
+
+nav ul li:hover {
+    background-color: #20B2AA;
+    border-radius: 12px;
+    transition: 0.2s ease-in;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.site-title {
+    border: 1px solid #000;
+    height: max-content;
+    width: max-content;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 10px auto;
+    /* background-color: #0005; */
+    color: #000;
+}
+
+marquee {
+    background-color: #0005;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.brif {
+    font-size: 18px;
+    background-color: #0004;
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    
+}
+
+.brif a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.btn {
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 10px 40px;
+}
+
+.user-form {
+    background-color: #0005;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    color: #fff;
+}
+
+.form-title {
+    text-transform: uppercase;
+}
