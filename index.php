@@ -13,17 +13,17 @@
 
     <?php include('navbar.php'); ?>
 
-    <div class="container-fluid">
+    <div class="container-fluid brif">
 
         <div class="site-title" align="center">
             <h1> CV builder</h1>
             <h5>For offlicial use case.</h5>
         </div>
 
-        <div class="brif" align="center">
+        <div align="center">
             <p>
                 We are here to help those people who wants to build there CV as fast as possible. If you need any help
-                you can <a href="./contact.php">contact us</a>
+                you can <a href="./contact.php" class="contact">contact us</a>
             </p>
         </div>
 

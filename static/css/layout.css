@@ -64,13 +64,15 @@ marquee {
 .brif {
     font-size: 18px;
     background-color: #0004;
-    padding: 12px;
+    padding: 20px;
     border-radius: 12px;
     color: #fff;
-    
+    margin: 90px auto;
+    max-width: 800px;
+    width: 90%;
 }
 
-.brif a {
+.contact {
     color: #fff;
     text-decoration: underline;
 }

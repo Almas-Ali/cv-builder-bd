@@ -17,71 +17,114 @@
 
         <div class="user-form">
             <h2 align="center" class="form-title">Fill the form correctly</h2>
-            <form action="./cv.php" method="post" class="form-group text-dark">
+            <form action="./cv" method="post" class="form-group text-dark" enctype="multipart/form-data">
 
-                <div class="mb-3 form-floating">
-                    <input type="text" class="form-control" id="full_name" name="full_name" aria-describedby="full_name"
-                        placeholder="Full Name" title="Full Name" required>
-                    <label for="full_name" class="form-label">Full Name</label>
+                <div class="">
+                    <h4 align="center" class="text-light pt-2 form-title">Personal Informations</h4>
+
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="full_name" name="full_name"
+                            aria-describedby="full_name" placeholder="Full Name" title="Full Name" required>
+                        <label for="full_name" class="form-label">Full Name</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="email"
+                            placeholder="Email Address" title="Email Address" required>
+                        <label for="email" class="form-label">Email address</label>
+                        <div class="form-text text-light">We don't collects user informations.</div>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input type="phone" class="form-control" name="mobile" if="mobile" aria-describedby="mobile"
+                            placeholder="Mobile Number" title="Mobile Number" required>
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                        <div class="form-text text-light">We don't collects user informations.</div>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" name="fathers_name" id="fathers_name"
+                            aria-describedby="fathers_name" placeholder="Father's Name" title="Father's Name" required>
+                        <label for="fathers_name" class="form-label">Father's Name</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" name="mothers_name" id="mothers_name"
+                            aria-describedby="mothers_name" placeholder="Mother's Name" title="Mother's Name" required>
+                        <label for="mothers_name" class="form-label">Mother's Name</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" name="nationality" id="nationality"
+                            aria-describedby="nationality" placeholder="Nationality" title="Nationality" required>
+                        <label for="nationality" class="form-label">Nationality</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" name="religion" id="religion"
+                            aria-describedby="religion" placeholder="Religion" title="Religion" required>
+                        <label for="religion" class="form-label">Religion</label>
+                    </div>
+
+                    <select class="form-select mb-2" aria-label=".form-select-sm" name="marital_status">
+                        <option selected>Marital Status</option>
+                        <option value="Single">Single</option>
+                        <option value="Marriaged">Marriaged</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+
+                    <div class="mb-3 form-floating">
+                        <input type="date" class="form-control" name="date_of_birth" aria-describedby="date_of_birth"
+                            title="Date of Birth" placeholder="dd/mm/yyyy" required>
+                        <label for="date_of_birth" class="form-label">Date of Birth</label>
+                    </div>
+
+                    <div class="mb-2 form-floating">
+                        <textarea class="form-control" placeholder="Present Address" id="present_adddress"
+                            name="present_adddress" style="height: 100px" title="Present Address" required></textarea>
+                        <label for="present_adddress">Present Address</label>
+                    </div>
+
+                    <div class="mb-2 form-floating">
+                        <textarea class="form-control" placeholder="Permanent Address" id="permanent_adddress"
+                            style="height: 100px" title="Permanent Address" name="permanent_adddress"
+                            required></textarea>
+                        <label for="permanent_adddress">Permanent Address</label>
+                    </div>
+
+                    <div class="mb-2 form-floating">
+                        <textarea class="form-control" placeholder="Mailing Address" id="mailing_adddress"
+                            style="height: 100px" title="Mailing Address" name="mailing_adddress" required></textarea>
+                        <label for="mailing_adddress">Mailing Address</label>
+                    </div>
+
+                    <div class="mb-2 form-floating">
+                        <textarea class="form-control" placeholder="Objective of Career" id="objective"
+                            style="height: 100px" title="Objective of Career" name="objective" required></textarea>
+                        <label for="objective">Objective of Career</label>
+                    </div>
+
+                    <div class="mb-2 form-floating">
+                        <input class="form-control" type="file" id="photo" name="photo" title="Photo" required>
+                        <label for="photo" class="form-label">Photo</label>
+                    </div>
+
                 </div>
 
-                <div class="mb-3 form-floating">
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email"
-                        placeholder="Email Address" title="Email Address" required>
-                    <label for="email" class="form-label">Email address</label>
-                    <div class="form-text text-light">We don't collects user informations.</div>
+                <div class="mb-4">
+                    <h4 align="center" class="text-light pt-3 form-title">Education Qualifications</h4>
+
+
                 </div>
 
-                <div class="mb-3 form-floating">
-                    <input type="phone" class="form-control" name="mobile" if="mobile" aria-describedby="mobile"
-                        placeholder="Mobile Number" title="Mobile Number" required>
-                    <label for="mobile" class="form-label">Mobile Number</label>
-                    <div class="form-text text-light">We don't collects user informations.</div>
-                </div>
 
-                <div class="mb-3 form-floating">
-                    <input type="text" class="form-control" name="fathers_name" id="fathers_name"
-                        aria-describedby="fathers_name" placeholder="Father's Name" title="Father's Name" required>
-                    <label for="fathers_name" class="form-label">Father's Name</label>
-                </div>
 
-                <div class="mb-3 form-floating">
-                    <input type="text" class="form-control" name="mothers_name" id="mothers_name"
-                        aria-describedby="mothers_name" placeholder="Mother's Name" title="Mother's Name" required>
-                    <label for="mothers_name" class="form-label">Mother's Name</label>
-                </div>
-
-                <div class="mb-3 form-floating">
-                    <input type="text" class="form-control" name="nationality" id="nationality"
-                        aria-describedby="nationality" placeholder="Nationality" title="Nationality" required>
-                    <label for="nationality" class="form-label">Nationality</label>
-                </div>
-
-                <div class="mb-3 form-floating">
-                    <input type="text" class="form-control" name="religion" id="religion" aria-describedby="religion"
-                        placeholder="Religion" title="Religion" required>
-                    <label for="religion" class="form-label">Religion</label>
-                </div>
-
-                <select class="form-select mb-2" aria-label=".form-select-sm" name="marital_status">
-                    <option selected>Marital Status</option>
-                    <option value="Single">Single</option>
-                    <option value="Marriaged">Marriaged</option>
-                    <option value="Divorced">Divorced</option>
-                  </select>
-
-                <div class="mb-3 form-floating">
-                    <input type="date" class="form-control" name="date_of_birth" aria-describedby="date_of_birth"
-                        title="Date of Birth" placeholder="dd/mm/yyyy" required>
-                    <label for="date_of_birth" class="form-label">Date of Birth</label>
-                </div>
-
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" name="terms" id="terms" title="Terms & Conditions" required>
+                <div class="mb-1 form-check">
+                    <input type="checkbox" class="form-check-input" name="terms" id="terms" title="Terms & Conditions"
+                        required>
                     <label class="form-check-label text-light" for="terms" title="Terms & Conditions">Accept Terms &
                         Conditions</label>
                 </div>
-
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
