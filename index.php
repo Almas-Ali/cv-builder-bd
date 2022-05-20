@@ -12,6 +12,9 @@
 <body>
 
     <?php include('navbar.php'); ?>
+    <div class="loader-back">
+        <div class="loader"></div>
+    </div>
 
     <div class="container-fluid brif">
 

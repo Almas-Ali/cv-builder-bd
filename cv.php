@@ -24,7 +24,9 @@ if ( !empty($_POST) ){
 
 <body>
 
-
+    <div class="loader-back">
+        <div class="loader"></div>
+    </div>
     <!-- 
 
     <?php
@@ -285,7 +287,27 @@ if ( !empty($_POST) ){
             </table>
         </div>
 
+        <?php if (!empty($_POST['experience'])){ ?>
+        <div class="experience">
+            <hr>
+            <h4 class="sub-title">Experience</h4>
+            <hr>
+            <p>
+            <pre><?php echo $_POST['experience']; ?></pre>
+            </p>
+        </div>
+        <?php } ?>
 
+        <?php if (!empty($_POST['references'])){ ?>
+        <div class="references">
+            <hr>
+            <h4 class="sub-title">References</h4>
+            <hr>
+            <p>
+                <pre><?php echo $_POST['references']; ?></pre>
+            </p>
+        </div>
+        <?php } ?>
 
         <button id="print" class="btn btn-primary mt-5 ml-3">Print</button>
     </div>

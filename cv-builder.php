@@ -12,6 +12,9 @@
 <body>
 
     <?php include('navbar.php'); ?>
+    <div class="loader-back">
+        <div class="loader"></div>
+    </div>
 
     <div class="container-fluid">
 
@@ -256,11 +259,23 @@
                             <label for="msc_year">Result</label>
                         </div>
                     </div>
-
-
-
                 </div>
 
+                <div class="experience">
+                    <div class="mb-2 form-floating">
+                        <textarea class="form-control" placeholder="Experience" id="experience"
+                            name="experience" style="height: 100px" title="Experience"></textarea>
+                        <label for="experience">Experience</label>
+                    </div>
+                </div>
+
+                <div class="references">
+                    <div class="mb-2 form-floating">
+                        <textarea class="form-control" placeholder="References" id="references"
+                            name="references" style="height: 100px" title="References"></textarea>
+                        <label for="references">References</label>
+                    </div>
+                </div>
 
 
                 <div class="mb-1 form-check">
