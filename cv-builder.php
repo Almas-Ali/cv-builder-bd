@@ -19,7 +19,7 @@
             <h2 align="center" class="form-title">Fill the form correctly</h2>
             <form action="./cv" method="post" class="form-group text-dark" enctype="multipart/form-data">
 
-                <div class="">
+                <div class="personal">
                     <h4 align="center" class="text-light pt-2 form-title">Personal Informations</h4>
 
                     <div class="mb-3 form-floating">
@@ -75,7 +75,7 @@
 
                     <div class="mb-3 form-floating">
                         <input type="date" class="form-control" name="date_of_birth" aria-describedby="date_of_birth"
-                            title="Date of Birth" placeholder="dd/mm/yyyy" required>
+                            title="Date of Birth" placeholder="dd-mm-yyyy" required>
                         <label for="date_of_birth" class="form-label">Date of Birth</label>
                     </div>
 
@@ -111,8 +111,152 @@
 
                 </div>
 
-                <div class="mb-4">
+                <div class="mb-4 education">
                     <h4 align="center" class="text-light pt-3 form-title">Education Qualifications</h4>
+
+                    <div class="ssc">
+                        <h4 class="text-light" align="center">SSC Informations</h4>
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="ssc_year" id="ssc_year"
+                                aria-describedby="Passing Year" placeholder="Passing Year" title="Passing Year"
+                                required>
+                            <label for="ssc_year">Passing Year</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="ssc_group" id="ssc_group"
+                                aria-describedby="Group / Technology" placeholder="Group / Technology"
+                                title="Group / Technology" required>
+                            <label for="ssc_group">Group / Technology</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="ssc_board" id="ssc_board"
+                                aria-describedby="Board" placeholder="Board" title="Board" required>
+                            <label for="ssc_board">Board</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="ssc_result" id="ssc_result"
+                                aria-describedby="Result" placeholder="Result" title="Result" required>
+                            <label for="ssc_year">Result</label>
+                        </div>
+                    </div>
+
+                    <div class="hsc">
+                        <h4 class="text-light" align="center">HSC Informations</h4>
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="hsc_year" id="hsc_year"
+                                aria-describedby="Passing Year" placeholder="Passing Year" title="Passing Year">
+                            <label for="hsc_year">Passing Year</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="hsc_group" id="hsc_group"
+                                aria-describedby="Group / Technology" placeholder="Group / Technology"
+                                title="Group / Technology">
+                            <label for="hsc_group">Group / Technology</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="hsc_board" id="hsc_board"
+                                aria-describedby="Board" placeholder="Board" title="Board">
+                            <label for="hsc_board">Board</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="hsc_result" id="hsc_result"
+                                aria-describedby="Result" placeholder="Result" title="Result">
+                            <label for="hsc_year">Result</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="diploma">
+                        <h4 class="text-light" align="center">Diploma Informations</h4>
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="diploma_year" id="diploma_year"
+                                aria-describedby="Passing Year" placeholder="Passing Year" title="Passing Year">
+                            <label for="diploma_year">Passing Year</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="diploma_group" id="diploma_group"
+                                aria-describedby="Group / Technology" placeholder="Group / Technology"
+                                title="Group / Technology">
+                            <label for="diploma_group">Group / Technology</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="diploma_board" id="diploma_board"
+                                aria-describedby="Board" placeholder="Board" title="Board">
+                            <label for="diploma_board">Board</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="diploma_result" id="diploma_result"
+                                aria-describedby="Result" placeholder="Result" title="Result">
+                            <label for="diploma_year">Result</label>
+                        </div>
+                    </div>
+
+                    <div class="bsc">
+                        <h4 class="text-light" align="center">BSc Informations</h4>
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="bsc_year" id="bsc_year"
+                                aria-describedby="Passing Year" placeholder="Passing Year" title="Passing Year">
+                            <label for="bsc_year">Passing Year</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="bsc_group" id="bsc_group"
+                                aria-describedby="Group / Technology" placeholder="Group / Technology"
+                                title="Group / Technology">
+                            <label for="bsc_group">Group / Technology</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="bsc_board" id="bsc_board"
+                                aria-describedby="Board" placeholder="Board" title="Board">
+                            <label for="bsc_board">Board</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="bsc_result" id="bsc_result"
+                                aria-describedby="Result" placeholder="Result" title="Result">
+                            <label for="bsc_year">Result</label>
+                        </div>
+                    </div>
+
+                    <div class="msc">
+                        <h4 class="text-light" align="center">MSc Informations</h4>
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="msc_year" id="msc_year"
+                                aria-describedby="Passing Year" placeholder="Passing Year" title="Passing Year">
+                            <label for="msc_year">Passing Year</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="msc_group" id="msc_group"
+                                aria-describedby="Group / Technology" placeholder="Group / Technology"
+                                title="Group / Technology">
+                            <label for="msc_group">Group / Technology</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="msc_board" id="msc_board"
+                                aria-describedby="Board" placeholder="Board" title="Board">
+                            <label for="msc_board">Board</label>
+                        </div>
+
+                        <div class="mb-2 form-floating">
+                            <input type="text" class="form-control" name="msc_result" id="msc_result"
+                                aria-describedby="Result" placeholder="Result" title="Result">
+                            <label for="msc_year">Result</label>
+                        </div>
+                    </div>
+
 
 
                 </div>

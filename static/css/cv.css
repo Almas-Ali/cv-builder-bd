@@ -1,6 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0 8px;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.full_name-title {
+  margin-bottom: 10px;
+  /* text-decoration: underline; */
+  color: rgb(255, 69, 36);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.photo {
+  position: absolute;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  padding: 3px;
+}
+
+.contact-title {
+    /* background-color: #0005; */
+    /* border-radius: 12px; */
+    margin: 10px auto;
+    max-width: 400px;
+    width: 90%;
+    padding: 5px;
+    /* color: #fff; */
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    border-top: 5px solid #000;
+}
+
+.sub-title {
+    background-color: #0005;
+    padding: 3px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.education_qualifications table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+
+.education_qualifications table {
+  border-radius: 12px;
+}
+
+.education_qualifications table,
+.education_qualifications th,
+.education_qualifications td {
+border: 2px solid #000;
+padding: 5px;
+text-align: center;
+}
+
+.education_qualifications tr:hover {
+background-color: coral;
+}
+
+/* .education_qualifications tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.education_qualifications thead {
+  background-color: #04AA6D;
+  color: #fff;
+}
+
+
+@media print {
+  * {
+    margin: 0 2px;
+  }
+
+  #print {
+    display: none;
+  }
+  
+}
