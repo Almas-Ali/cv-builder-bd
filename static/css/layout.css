@@ -122,6 +122,9 @@ marquee {
   width: 120px;
   height: 120px;
   animation: spin 1s linear infinite;
+  position: absolute;
+  top: 36%;
+  left: 46%;
 }
 
 .loader-back {
@@ -132,7 +135,7 @@ marquee {
   height: 100%;
   width: 100%;
   inset: 0;
-  background: aqua;
+  background: #fff;
   position: fixed;
   animation: fadeOut 1s;
   animation-fill-mode: forwards;

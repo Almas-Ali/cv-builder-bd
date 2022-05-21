@@ -67,8 +67,8 @@
                         visit).</p>
                 </li>
                 <li>
-                    <p><strong>Website</strong> refers to CV Builder, accessible from <a href="https://cv-builder.com"
-                            rel="external nofollow noopener" target="_blank">https://cv-builder.com</a></p>
+                    <p><strong>Website</strong> refers to CV Builder, accessible from <a href="https://cv-builder-bd.herokuapp.com"
+                            rel="external nofollow noopener" target="_blank">https://cv-builder-bd.herokuapp.com</a></p>
                 </li>
                 <li>
                     <p><strong>You</strong> means the individual accessing or using the Service, or the company, or
