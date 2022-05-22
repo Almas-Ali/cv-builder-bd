@@ -11,6 +11,9 @@
 
 <body>
 <?php include('navbar.php'); ?>
+    <div class="loader-back">
+        <div class="loader"></div>
+    </div>
     <div class="container brif">
         <div class="tab-content translations-content-item en visible" id="en">
             <h1>Privacy Policy</h1>

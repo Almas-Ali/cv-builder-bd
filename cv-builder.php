@@ -63,13 +63,15 @@
                         <label for="nationality" class="form-label">Nationality</label>
                     </div>
 
-                    <div class="mb-3 form-floating">
-                        <input type="text" class="form-control" name="religion" id="religion"
-                            aria-describedby="religion" placeholder="Religion" title="Religion" required>
-                        <label for="religion" class="form-label">Religion</label>
-                    </div>
+                    <select class="form-select mb-2" aria-label=".form-select-sm" name="religion" required>
+                        <option selected>Religion</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddhis">Buddhis</option>
+                        <option value="Christian">Christian</option>
+                    </select>
 
-                    <select class="form-select mb-2" aria-label=".form-select-sm" name="marital_status">
+                    <select class="form-select mb-2" aria-label=".form-select-sm" name="marital_status" required>
                         <option selected>Marital Status</option>
                         <option value="Single">Single</option>
                         <option value="Marriaged">Marriaged</option>

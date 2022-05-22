@@ -14,6 +14,7 @@ if ( !empty($_POST) ){
     <title>
         <?php echo $_POST['full_name']; ?> - CV
     </title>
+    <link rel="shortcut icon" href="./static/img/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./static/css/bootstrap.css">
     <script src="./static/js/bootstrap.js"></script>
@@ -27,25 +28,9 @@ if ( !empty($_POST) ){
     <div class="loader-back">
         <div class="loader"></div>
     </div>
-    <!-- 
+
 
     <?php
-
-    echo $_POST['full_name'] . "<br>";
-    echo $_POST['email'] . "<br>";
-    echo $_POST['mobile'] . "<br>";
-    echo $_POST['fathers_name'] . "<br>";
-    echo $_POST['mothers_name'] . "<br>";
-    echo $_POST['nationality'] . "<br>";
-    echo $_POST['religion'] . "<br>";
-    echo $_POST['marital_status'] . "<br>";
-    echo $_POST['date_of_birth'] . "<br>";
-    echo $_POST['present_adddress'] . "<br>";
-    echo $_POST['permanent_adddress'] . "<br>";
-    echo $_POST['mailing_adddress'] . "<br>";
-    echo $_POST['objective'] . "<br>";
-    echo $_FILES['photo']['name'] . "<br>";
-    echo $_POST['terms'] . "<br>";
 
     if(isset($_FILES['photo'])){
         /* create new name file */
@@ -61,10 +46,10 @@ if ( !empty($_POST) ){
 
         // echo "Stored in: {$destination}";
      }
-    ?> -->
+    ?>
 
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="contact-title" align="center">
             <p align="center" class="cv-title">RESUME OF</p>
             <img src="<?php echo $destination; ?>" alt="Photo" class="photo">
@@ -81,11 +66,11 @@ if ( !empty($_POST) ){
                 <?php echo $_POST['mobile']; ?>
             </p>
         </div>
-        <hr>
         <div class="personal">
+            <hr>
             <h4 class="sub-title">Personal Details</h4>
             <hr>
-            <table>
+            <table class="personal-table">
                 <tr>
                     <td>Father's Name</td>
                     <td>:</td>
@@ -304,27 +289,74 @@ if ( !empty($_POST) ){
             <h4 class="sub-title">References</h4>
             <hr>
             <p>
-                <pre><?php echo $_POST['references']; ?></pre>
+            <pre><?php echo $_POST['references']; ?></pre>
             </p>
         </div>
         <?php } ?>
 
-        <button id="print" class="btn btn-primary mt-5 ml-3">Print</button>
+        <button id="print" class="btn btn-primary m-5">Print</button>
     </div>
 
-    <!-- 
+
     <?php
         // Saving all details in a txt file.
         $txt_file = "data/" . uniqid() . "-" . time() . ".txt"; // 5dab1961e93a7-1571494241
         $file = fopen($txt_file, "w") or die("Enable to open file!" . $txt_file);
 
-        $txt = "This is a sample txt.";
-        fwrite($txt_file, $txt);
+        $txt = "" .
+"Full Name: " .          $_POST['full_name']     . "\n" .
+"Email : " .             $_POST['email']          . "\n" .
+"Mobile : " .            $_POST['mobile']        . "\n" .
+"Father's Name : ".      $_POST['fathers_name'] . "\n" .
+"Mother's Name : ".      $_POST['mothers_name'] . "\n" .
+"Nationality : " .       $_POST['nationality'] . "\n" .
+"Religion : " .          $_POST['religion'] . "\n" .
+"marital_status : " .    $_POST['marital_status'] . "\n" .
+"date_of_birth : ".      $_POST['date_of_birth'] . "\n" .
+"present_adddress : " .  $_POST['present_adddress'] . "\n" .
+"permanent_adddress : ". $_POST['permanent_adddress'] . "\n" .
+"mailing_adddress: " .   $_POST['mailing_adddress'] . "\n" .
+"objective : " .         $_POST['objective'] . "\n" .
+"photo : ".              $_FILES['photo']['name'] . "  " . $destination . "\n" .
 
-        fclose($txt_file);
+"ssc_year : " .          $_POST['ssc_year'] . "\n" .
+"ssc_group : " .         $_POST['ssc_group'] . "\n" .
+"ssc_board : " .         $_POST['ssc_board'] . "\n" .
+"ssc_result : " .        $_POST['ssc_result'] . "\n" .
+
+"hsc_year : " .          $_POST['hsc_year'] . "\n" .
+"hsc_group : " .         $_POST['hsc_group'] . "\n" .
+"hsc_board : " .         $_POST['hsc_board'] . "\n" .
+"hsc_result : " .        $_POST['hsc_result'] . "\n" .
+
+"diploma_year : " .      $_POST['diploma_year'] . "\n" .
+"diploma_group : " .     $_POST['diploma_group'] . "\n" .
+"diploma_board : " .     $_POST['diploma_board'] . "\n" .
+"diploma_result : " .    $_POST['diploma_result'] . "\n" .
+
+"bsc_year : " .          $_POST['bsc_year'] . "\n" .
+"bsc_group : " .         $_POST['bsc_group'] . "\n" .
+"bsc_board : " .         $_POST['bsc_board'] . "\n" .
+"bsc_result : " .        $_POST['bsc_result'] . "\n" .
+
+"msc_year : " .          $_POST['msc_year'] . "\n" .
+"msc_group : " .         $_POST['msc_group'] . "\n" .
+"msc_board : " .         $_POST['msc_board'] . "\n" .
+"msc_result : " .        $_POST['msc_result'] . "\n" .
+
+"experience : " .        $_POST['experience'] . "\n" .
+"references : " .        $_POST['references'] . "\n" .
+
+"terms : ".              $_POST['terms'] . "\n" 
+;
+        fwrite($file, $txt);
+
+        fclose($file);
 
 
-    ?> -->
+    ?>
+
+
 
 </body>
 

@@ -1,7 +1,8 @@
 * {
   margin: 0 8px;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  -webkit-print-color-adjust: exact !important;
 }
 
 .full_name-title {
@@ -14,7 +15,7 @@
 
 .photo {
   position: absolute;
-  right: 0;
+  right: 165px;
   height: 100px;
   width: 100px;
   border-radius: 12px;
@@ -23,28 +24,27 @@
 }
 
 .contact-title {
-    /* background-color: #0005; */
-    /* border-radius: 12px; */
-    margin: 10px auto;
-    max-width: 400px;
-    width: 90%;
-    padding: 5px;
-    /* color: #fff; */
+  margin: 10px auto;
+  max-width: 400px;
+  width: 90%;
+  padding: 5px;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 hr {
-    border-top: 5px solid #000;
+  border-top: 5px solid #34568b;
+  border-radius: 12px;
 }
 
 .sub-title {
-    background-color: #0005;
-    padding: 3px;
-    border-radius: 8px;
-    text-transform: uppercase;
+  background-color: #34568b;
+  color: #fff;
+  padding: 3px 3px 3px 5px;
+  border-radius: 8px;
+  text-transform: uppercase;
 }
 
 .education_qualifications table {
@@ -54,34 +54,46 @@ hr {
   border: 3px solid purple;
 }
 
-
-.education_qualifications table {
-  border-radius: 12px;
-}
-
 .education_qualifications table,
 .education_qualifications th,
 .education_qualifications td {
-border: 2px solid #000;
-padding: 5px;
-text-align: center;
+  border: 2px solid #000;
+  padding: 5px;
+  text-align: center;
 }
 
 .education_qualifications tr:hover {
-background-color: coral;
+  background-color: coral;
 }
 
-/* .education_qualifications tr:nth-child(even) {
+.education_qualifications tr:nth-child(even) {
   background-color: #f2f2f2;
-} */
+}
 
 .education_qualifications thead {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: #fff;
 }
 
+.personal-table table,
+.personal-table th,
+.personal-table td {
+  table-layout: fixed;
+  border-collapse: collapse;
+  /* border: 3px solid #000; */
+  padding: 5px;
+}
+
+.personal-table td:first-child {
+  width: 165px;
+}
+
 pre {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  border: 1px dotted #000;
 }
 
 @media print {
@@ -92,5 +104,43 @@ pre {
   #print {
     display: none;
   }
-  
+
+  .photo {
+    position: absolute;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    padding: 3px;
+  }
+
+  .career {
+    page-break-after: always;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0.5in;
+  }
+
+  @page :left {
+    @top-left {
+      content: "CV Builder";
+      margin: 50px;
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    border: none;
+    margin: 0;
+  }
+
+  /* html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 9pt;
+  } */
 }
