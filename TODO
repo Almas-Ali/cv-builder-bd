@@ -1,4 +1,14 @@
-19-08-2022
+23-08-2022
 ----------------
 1. E-Mail CV
-2. Preloader animation
+
+
+Problem:
+------------------
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+https strict loading Problem
+
+--------------------------
