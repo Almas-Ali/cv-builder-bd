@@ -18,10 +18,22 @@
 
     <div class="container-fluid brif">
 
-        <div class="site-title" align="center">
+        <div class="site-title main-div main-div2" align="center">
             <h1> CV builder</h1>
             <h5>For offlicial use case.</h5>
         </div>
+
+        <!-- <div class="wrapper">
+            <div class="main-div main-div1">
+                <h1>Enjoy</h1>
+            </div>
+            <div class="main-div main-div2">
+                <h1>Every</h1>
+            </div>
+            <div class="main-div main-div3">
+                <h1>Moment</h1>
+            </div>
+        </div> -->
 
         <div align="center">
             <p>

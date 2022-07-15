@@ -49,7 +49,7 @@ if ( !empty($_POST) ){
     ?>
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="contact-title" align="center">
             <p align="center" class="cv-title">RESUME OF</p>
             <img src="<?php echo $destination; ?>" alt="Photo" class="photo">

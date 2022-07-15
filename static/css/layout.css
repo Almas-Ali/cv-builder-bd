@@ -52,6 +52,7 @@ a:hover {
   margin: 10px auto;
   /* background-color: #0005; */
   color: #000;
+  animation: bright 1s alternate-reverse infinite;
 }
 
 marquee {
@@ -157,7 +158,18 @@ marquee {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes bright {
+  0% {
+    color: #0fa;
+  }
+
+  100% {
+    color: #0fb;
   }
 }
